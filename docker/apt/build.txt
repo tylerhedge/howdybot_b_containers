@@ -1,0 +1,8 @@
+# Needed to COMPILE our workspace (dev container + CI build stage).
+# Never installed in the robot runtime image.
+ros-dev-tools
+build-essential
+cmake
+git
+python3-pip
+python3-pytest

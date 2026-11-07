@@ -1,0 +1,42 @@
+# Installed in BOTH the dev container and the robot image.
+# One package per line; comments allowed. Prefer declaring a package as a
+# dependency in a package.xml (rosdep installs it automatically) and only list
+# things here that aren't tied to one of our ROS packages.
+
+# --- ROS core ---------------------------------------------------------------
+ros-jazzy-ros-base
+python3-rosdep
+ros-jazzy-rmw-cyclonedds-cpp
+
+# --- Navigation / localization ---------------------------------------------
+ros-jazzy-navigation2
+ros-jazzy-nav2-bringup
+ros-jazzy-slam-toolbox
+ros-jazzy-robot-localization
+ros-jazzy-robot-state-publisher
+ros-jazzy-xacro
+ros-jazzy-twist-mux
+
+# --- Sensors / perception plumbing (two LiDARs, RGB-D, RGB) ----------------
+ros-jazzy-laser-filters
+ros-jazzy-pointcloud-to-laserscan
+ros-jazzy-image-transport
+ros-jazzy-cv-bridge
+ros-jazzy-vision-msgs
+# Sensor DRIVERS go in howdybot_bringup/package.xml once models are chosen,
+# e.g. <exec_depend>realsense2_camera</exec_depend>, <exec_depend>usb_cam</exec_depend>
+
+# --- Operator / debugging over the network ----------------------------------
+ros-jazzy-joy
+ros-jazzy-teleop-twist-joy
+ros-jazzy-foxglove-bridge
+ros-jazzy-diagnostic-updater
+
+# --- Audio (playing the "Howdy" facts) --------------------------------------
+alsa-utils
+sox
+libsox-fmt-mp3
+
+# --- Hardware helpers ------------------------------------------------------
+usbutils
+v4l-utils

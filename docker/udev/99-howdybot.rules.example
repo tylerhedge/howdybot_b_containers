@@ -1,0 +1,18 @@
+# Rename to 99-howdybot.rules once you know your hardware; jetson-bootstrap.sh
+# installs every *.rules file in this folder.
+#
+# Goal: stable names (/dev/lidar_front, /dev/lidar_rear) instead of
+# /dev/ttyUSB0 / ttyUSB1, which swap depending on plug-in order.
+#
+# Find attributes with the device plugged in:
+#   udevadm info -a -n /dev/ttyUSB0 | grep -E 'idVendor|idProduct|serial|KERNELS'
+#
+# Two identical LiDARs usually share vendor/product IDs, so match either a
+# unique serial number or the physical USB port (KERNELS, e.g. "1-2.1").
+
+# SUBSYSTEM=="tty", ATTRS{idVendor}=="10c4", ATTRS{idProduct}=="ea60", ATTRS{serial}=="AAAA1111", SYMLINK+="lidar_front", MODE="0666"
+# SUBSYSTEM=="tty", ATTRS{idVendor}=="10c4", ATTRS{idProduct}=="ea60", ATTRS{serial}=="BBBB2222", SYMLINK+="lidar_rear",  MODE="0666"
+
+# Port-based alternative (label the USB ports on the robot!):
+# SUBSYSTEM=="tty", KERNELS=="1-2.1", SYMLINK+="lidar_front", MODE="0666"
+# SUBSYSTEM=="tty", KERNELS=="1-2.2", SYMLINK+="lidar_rear",  MODE="0666"

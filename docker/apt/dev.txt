@@ -1,0 +1,19 @@
+# Dev-container-only tools: GUIs, simulation, debugging, editor comforts.
+
+# --- Visualization + simulation ---------------------------------------------
+ros-jazzy-desktop
+ros-jazzy-ros-gz
+ros-jazzy-rqt-tf-tree
+
+# --- Debugging ---------------------------------------------------------------
+gdb
+htop
+iputils-ping
+iproute2
+tmux
+less
+nano
+vim
+sudo
+bash-completion
+clang-format
