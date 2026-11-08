@@ -46,7 +46,7 @@ services:
   # ------------------------------------------------------------------ dev ---
   dev:
     <<: *ros-common
-    profiles: [dev]             # never starts on the robot by accident
+    # profiles: [dev]             # never starts on the robot by accident
     image: howdybot:dev
     build:
       context: .
