@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+<!-- Basic differential drive mobile base -->
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="howdybot">
+  <xacro:arg name="use_mock_hardware" default="true" />
+  <xacro:arg name="disable_commands" default="false"/>
+  
+  <!-- TODO FILL IN WITH REAL NUMBERS-->
+  <!-- Constants for robot dimensions -->
+  <xacro:property name="PI" value="3.1415926535897931"/>
+  <xacro:property name="base_mass" value="0.3" /> <!-- arbitrary value for base mass -->
+  <xacro:property name="base_width" value="0.3" />   <!-- along y -->
+  <xacro:property name="base_length" value="0.4" />  <!-- along x -->
+  <xacro:property name="base_height" value="0.05" /> <!-- along z -->
+  <xacro:property name="wheel_mass" value="0.3" /> <!-- arbitrary value for wheel mass -->
+  <xacro:property name="wheel_len" value="0.04" />
+  <xacro:property name="wheel_radius" value="0.05" />
+  <xacro:property name="wheel_gap" value="0.005" /> <!-- clearance between wheel inner face and base side -->
+  <!-- Wheel centers: inset from front/back so they don't stick out past the base,
+       and pushed out sideways with a small gap so wheel and base collisions never overlap. -->
+  <xacro:property name="wheel_x_offset" value="${base_length/2 - wheel_radius}" />
+  <xacro:property name="wheel_y_offset" value="${base_width/2 + wheel_gap + wheel_len/2}" />
+  <xacro:property name="wheel_z_offset" value="0.0" /> <!-- axle at base mid-height -->
+
+  <!-- Base Link (box centered on the link origin) -->
+  <link name="base_link">
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="${base_length} ${base_width} ${base_height}"/>
+      </geometry>
+    </collision>
+
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="${base_length} ${base_width} ${base_height}"/>
+      </geometry>
+      <material name="orange"/>
+    </visual>
+
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="${base_mass}"/>
+      <inertia
+        ixx="${base_mass / 12.0 * (base_width*base_width + base_height*base_height)}" ixy="0.0" ixz="0.0"
+        iyy="${base_mass / 12.0 * (base_length*base_length + base_height*base_height)}" iyz="0.0"
+        izz="${base_mass / 12.0 * (base_length*base_length + base_width*base_width)}"/>
+    </inertial>
+  </link>
+
+  <!-- Wheel macro: x_sign/y_sign are +1 or -1 to pick the corner -->
+  <xacro:macro name="wheel" params="prefix x_sign y_sign">
+    <joint name="${prefix}_wheel_joint" type="continuous">
+      <parent link="base_link"/>
+      <child link="${prefix}_wheel"/>
+      <origin xyz="${x_sign*wheel_x_offset} ${y_sign*wheel_y_offset} ${wheel_z_offset}" rpy="0 0 0"/>
+      <axis xyz="0 1 0"/>
+      <dynamics damping="0.2"/>
+      <limit effort="100" velocity="10.0"/>
+    </joint>
+
+    <link name="${prefix}_wheel">
+      <collision>
+        <origin xyz="0 0 0" rpy="${PI/2} 0 0"/>
+        <geometry>
+          <cylinder length="${wheel_len}" radius="${wheel_radius}"/>
+        </geometry>
+      </collision>
+
+      <visual>
+        <origin xyz="0 0 0" rpy="${PI/2} 0 0"/>
+        <geometry>
+          <cylinder length="${wheel_len}" radius="${wheel_radius}"/>
+        </geometry>
+        <material name="black"/>
+      </visual>
+
+      <!-- Solid cylinder with its axis along the link's y axis -->
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="${wheel_mass}"/>
+        <inertia
+          ixx="${wheel_mass / 12.0 * (3*wheel_radius*wheel_radius + wheel_len*wheel_len)}" ixy="0.0" ixz="0.0"
+          iyy="${wheel_mass / 2.0 * wheel_radius*wheel_radius}" iyz="0.0"
+          izz="${wheel_mass / 12.0 * (3*wheel_radius*wheel_radius + wheel_len*wheel_len)}"/>
+      </inertial>
+    </link>
+  </xacro:macro>
+
+  <xacro:wheel prefix="front_left"  x_sign="1"  y_sign="1"/>
+  <xacro:wheel prefix="front_right" x_sign="1"  y_sign="-1"/>
+  <xacro:wheel prefix="rear_left"   x_sign="-1" y_sign="1"/>
+  <xacro:wheel prefix="rear_right"  x_sign="-1" y_sign="-1"/>
+
+  <material name="black">
+    <color rgba="0.0 0.0 0.0 1.0"/>
+  </material>
+
+  <material name="blue">
+    <color rgba="0.0 0.0 0.8 1.0"/>
+  </material>
+
+  <material name="green">
+    <color rgba="0.0 0.8 0.0 1.0"/>
+  </material>
+
+  <material name="grey">
+    <color rgba="0.2 0.2 0.2 1.0"/>
+  </material>
+
+  <material name="orange">
+    <color rgba="${255/255} ${108/255} ${10/255} 1.0"/>
+  </material>
+
+  <material name="brown">
+    <color rgba="${222/255} ${207/255} ${195/255} 1.0"/>
+  </material>
+
+  <material name="red">
+    <color rgba="0.8 0.0 0.0 1.0"/>
+  </material>
+
+  <material name="white">
+    <color rgba="1.0 1.0 1.0 1.0"/>
+  </material>
+  <!-- Import diffbot ros2_control description -->
+  <xacro:include filename="../ros2_control/howdybot.ros2_control.xacro" />
+
+  <xacro:howdybot_ros2_control
+    name="Howdybot" use_mock_hardware="$(arg use_mock_hardware)" disable_commands="$(arg disable_commands)" />
+
+</robot>
