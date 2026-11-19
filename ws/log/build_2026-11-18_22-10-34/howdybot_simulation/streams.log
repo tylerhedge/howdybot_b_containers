@@ -1,0 +1,19 @@
+[1.826s] Invoking command in '/home/ros/howdybot/ws/src/howdybot_simulation': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ros/howdybot/ws/build/howdybot_simulation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros/howdybot/ws/install/howdybot_simulation/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/howdybot_simulation build --build-base /home/ros/howdybot/ws/build/howdybot_simulation/build install --record /home/ros/howdybot/ws/build/howdybot_simulation/install.log --install-scripts $base/lib/howdybot_simulation --single-version-externally-managed install_data
+[2.050s] running egg_info
+[2.067s] writing ../../build/howdybot_simulation/howdybot_simulation.egg-info/PKG-INFO
+[2.067s] writing dependency_links to ../../build/howdybot_simulation/howdybot_simulation.egg-info/dependency_links.txt
+[2.067s] writing requirements to ../../build/howdybot_simulation/howdybot_simulation.egg-info/requires.txt
+[2.068s] writing top-level names to ../../build/howdybot_simulation/howdybot_simulation.egg-info/top_level.txt
+[2.098s] reading manifest file '../../build/howdybot_simulation/howdybot_simulation.egg-info/SOURCES.txt'
+[2.099s] writing manifest file '../../build/howdybot_simulation/howdybot_simulation.egg-info/SOURCES.txt'
+[2.099s] running build
+[2.099s] running build_py
+[2.099s] running install
+[2.103s] running install_lib
+[2.119s] running install_data
+[2.119s] running install_egg_info
+[2.137s] removing '/home/ros/howdybot/ws/install/howdybot_simulation/lib/python3.12/site-packages/howdybot_simulation-0.0.0-py3.12.egg-info' (and everything under it)
+[2.139s] Copying ../../build/howdybot_simulation/howdybot_simulation.egg-info to /home/ros/howdybot/ws/install/howdybot_simulation/lib/python3.12/site-packages/howdybot_simulation-0.0.0-py3.12.egg-info
+[2.140s] running install_scripts
+[2.253s] writing list of installed files to '/home/ros/howdybot/ws/build/howdybot_simulation/install.log'
+[2.275s] Invoked command in '/home/ros/howdybot/ws/src/howdybot_simulation' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ros/howdybot/ws/build/howdybot_simulation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros/howdybot/ws/install/howdybot_simulation/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/howdybot_simulation build --build-base /home/ros/howdybot/ws/build/howdybot_simulation/build install --record /home/ros/howdybot/ws/build/howdybot_simulation/install.log --install-scripts $base/lib/howdybot_simulation --single-version-externally-managed install_data

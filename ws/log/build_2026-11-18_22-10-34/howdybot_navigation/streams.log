@@ -1,0 +1,24 @@
+[1.858s] Invoking command in '/home/ros/howdybot/ws/src/howdybot_navigation': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ros/howdybot/ws/build/howdybot_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros/howdybot/ws/install/howdybot_navigation/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/howdybot_navigation build --build-base /home/ros/howdybot/ws/build/howdybot_navigation/build install --record /home/ros/howdybot/ws/build/howdybot_navigation/install.log --install-scripts $base/lib/howdybot_navigation --single-version-externally-managed install_data
+[2.054s] running egg_info
+[2.068s] writing ../../build/howdybot_navigation/howdybot_navigation.egg-info/PKG-INFO
+[2.068s] writing dependency_links to ../../build/howdybot_navigation/howdybot_navigation.egg-info/dependency_links.txt
+[2.068s] writing requirements to ../../build/howdybot_navigation/howdybot_navigation.egg-info/requires.txt
+[2.072s] writing top-level names to ../../build/howdybot_navigation/howdybot_navigation.egg-info/top_level.txt
+[2.100s] reading manifest file '../../build/howdybot_navigation/howdybot_navigation.egg-info/SOURCES.txt'
+[2.101s] writing manifest file '../../build/howdybot_navigation/howdybot_navigation.egg-info/SOURCES.txt'
+[2.101s] running build
+[2.101s] running build_py
+[2.101s] running install
+[2.105s] running install_lib
+[2.124s] running install_data
+[2.124s] copying launch/navigation_launch.py -> /home/ros/howdybot/ws/install/howdybot_navigation/share/howdybot_navigation/launch
+[2.125s] copying config/nav2_params.yaml -> /home/ros/howdybot/ws/install/howdybot_navigation/share/howdybot_navigation/config
+[2.125s] creating /home/ros/howdybot/ws/install/howdybot_navigation/share/howdybot_navigation/maps
+[2.126s] copying maps/tb3_sandbox.yaml -> /home/ros/howdybot/ws/install/howdybot_navigation/share/howdybot_navigation/maps
+[2.126s] copying maps/tb3_sandbox.pgm -> /home/ros/howdybot/ws/install/howdybot_navigation/share/howdybot_navigation/maps
+[2.126s] running install_egg_info
+[2.140s] removing '/home/ros/howdybot/ws/install/howdybot_navigation/lib/python3.12/site-packages/howdybot_navigation-0.0.0-py3.12.egg-info' (and everything under it)
+[2.141s] Copying ../../build/howdybot_navigation/howdybot_navigation.egg-info to /home/ros/howdybot/ws/install/howdybot_navigation/lib/python3.12/site-packages/howdybot_navigation-0.0.0-py3.12.egg-info
+[2.144s] running install_scripts
+[2.255s] writing list of installed files to '/home/ros/howdybot/ws/build/howdybot_navigation/install.log'
+[2.277s] Invoked command in '/home/ros/howdybot/ws/src/howdybot_navigation' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ros/howdybot/ws/build/howdybot_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros/howdybot/ws/install/howdybot_navigation/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/howdybot_navigation build --build-base /home/ros/howdybot/ws/build/howdybot_navigation/build install --record /home/ros/howdybot/ws/build/howdybot_navigation/install.log --install-scripts $base/lib/howdybot_navigation --single-version-externally-managed install_data

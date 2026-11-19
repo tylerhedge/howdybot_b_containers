@@ -1,0 +1,14 @@
+package.xml
+setup.cfg
+setup.py
+../../build/howdybot_bringup/howdybot_bringup.egg-info/PKG-INFO
+../../build/howdybot_bringup/howdybot_bringup.egg-info/SOURCES.txt
+../../build/howdybot_bringup/howdybot_bringup.egg-info/dependency_links.txt
+../../build/howdybot_bringup/howdybot_bringup.egg-info/entry_points.txt
+../../build/howdybot_bringup/howdybot_bringup.egg-info/requires.txt
+../../build/howdybot_bringup/howdybot_bringup.egg-info/top_level.txt
+../../build/howdybot_bringup/howdybot_bringup.egg-info/zip-safe
+howdybot_bringup/__init__.py
+howdybot_bringup/howdy_heartbeat.py
+launch/robot_launch.py
+resource/howdybot_bringup

@@ -1,0 +1,2 @@
+[console_scripts]
+howdy_heartbeat = howdybot_bringup.howdy_heartbeat:main

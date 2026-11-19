@@ -1,0 +1,19 @@
+[1.909s] Invoking command in '/home/ros/howdybot/ws/src/howdybot_behavior': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ros/howdybot/ws/build/howdybot_behavior/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros/howdybot/ws/install/howdybot_behavior/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/howdybot_behavior build --build-base /home/ros/howdybot/ws/build/howdybot_behavior/build install --record /home/ros/howdybot/ws/build/howdybot_behavior/install.log --install-scripts $base/lib/howdybot_behavior --single-version-externally-managed install_data
+[2.141s] running egg_info
+[2.154s] writing ../../build/howdybot_behavior/howdybot_behavior.egg-info/PKG-INFO
+[2.154s] writing dependency_links to ../../build/howdybot_behavior/howdybot_behavior.egg-info/dependency_links.txt
+[2.155s] writing requirements to ../../build/howdybot_behavior/howdybot_behavior.egg-info/requires.txt
+[2.155s] writing top-level names to ../../build/howdybot_behavior/howdybot_behavior.egg-info/top_level.txt
+[2.185s] reading manifest file '../../build/howdybot_behavior/howdybot_behavior.egg-info/SOURCES.txt'
+[2.186s] writing manifest file '../../build/howdybot_behavior/howdybot_behavior.egg-info/SOURCES.txt'
+[2.186s] running build
+[2.186s] running build_py
+[2.186s] running install
+[2.190s] running install_lib
+[2.206s] running install_data
+[2.206s] running install_egg_info
+[2.225s] removing '/home/ros/howdybot/ws/install/howdybot_behavior/lib/python3.12/site-packages/howdybot_behavior-0.0.0-py3.12.egg-info' (and everything under it)
+[2.226s] Copying ../../build/howdybot_behavior/howdybot_behavior.egg-info to /home/ros/howdybot/ws/install/howdybot_behavior/lib/python3.12/site-packages/howdybot_behavior-0.0.0-py3.12.egg-info
+[2.228s] running install_scripts
+[2.364s] writing list of installed files to '/home/ros/howdybot/ws/build/howdybot_behavior/install.log'
+[2.395s] Invoked command in '/home/ros/howdybot/ws/src/howdybot_behavior' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ros/howdybot/ws/build/howdybot_behavior/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros/howdybot/ws/install/howdybot_behavior/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/howdybot_behavior build --build-base /home/ros/howdybot/ws/build/howdybot_behavior/build install --record /home/ros/howdybot/ws/build/howdybot_behavior/install.log --install-scripts $base/lib/howdybot_behavior --single-version-externally-managed install_data

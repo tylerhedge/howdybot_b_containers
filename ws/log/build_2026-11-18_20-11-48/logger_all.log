@@ -1,0 +1,566 @@
+[0.200s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.200s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7d91f258b9e0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7d91f26b2ab0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7d91f26b2ab0>>, mixin_verb=('build',))
+[0.263s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.263s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.263s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.263s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.263s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.263s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.263s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ros/howdybot/ws'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_behavior) by extensions ['ignore', 'ignore_ament_install']
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_behavior) by extension 'ignore'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_behavior) by extension 'ignore_ament_install'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_behavior) by extensions ['colcon_pkg']
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_behavior) by extension 'colcon_pkg'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_behavior) by extensions ['colcon_meta']
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_behavior) by extension 'colcon_meta'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_behavior) by extensions ['ros']
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_behavior) by extension 'ros'
+[0.299s] DEBUG:colcon.colcon_core.package_identification:Package 'src/howdybot_behavior' with type 'ros.ament_python' and name 'howdybot_behavior'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_bringup) by extension 'ignore'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_bringup) by extension 'ignore_ament_install'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_bringup) by extensions ['colcon_pkg']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_bringup) by extension 'colcon_pkg'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_bringup) by extensions ['colcon_meta']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_bringup) by extension 'colcon_meta'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_bringup) by extensions ['ros']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_bringup) by extension 'ros'
+[0.300s] DEBUG:colcon.colcon_core.package_identification:Package 'src/howdybot_bringup' with type 'ros.ament_python' and name 'howdybot_bringup'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_description) by extensions ['ignore', 'ignore_ament_install']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_description) by extension 'ignore'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_description) by extension 'ignore_ament_install'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_description) by extensions ['colcon_pkg']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_description) by extension 'colcon_pkg'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_description) by extensions ['colcon_meta']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_description) by extension 'colcon_meta'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_description) by extensions ['ros']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_description) by extension 'ros'
+[0.301s] DEBUG:colcon.colcon_core.package_identification:Package 'src/howdybot_description' with type 'ros.ament_cmake' and name 'howdybot_description'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_hardware) by extensions ['ignore', 'ignore_ament_install']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_hardware) by extension 'ignore'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_hardware) by extension 'ignore_ament_install'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_hardware) by extensions ['colcon_pkg']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_hardware) by extension 'colcon_pkg'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_hardware) by extensions ['colcon_meta']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_hardware) by extension 'colcon_meta'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_hardware) by extensions ['ros']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_hardware) by extension 'ros'
+[0.303s] DEBUG:colcon.colcon_core.package_identification:Package 'src/howdybot_hardware' with type 'ros.ament_cmake' and name 'howdybot_hardware'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_interfaces) by extension 'ignore'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_interfaces) by extension 'ignore_ament_install'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_interfaces) by extensions ['colcon_pkg']
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_interfaces) by extension 'colcon_pkg'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_interfaces) by extensions ['colcon_meta']
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_interfaces) by extension 'colcon_meta'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_interfaces) by extensions ['ros']
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_interfaces) by extension 'ros'
+[0.304s] DEBUG:colcon.colcon_core.package_identification:Package 'src/howdybot_interfaces' with type 'ros.ament_cmake' and name 'howdybot_interfaces'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_navigation) by extensions ['ignore', 'ignore_ament_install']
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_navigation) by extension 'ignore'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_navigation) by extension 'ignore_ament_install'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_navigation) by extensions ['colcon_pkg']
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_navigation) by extension 'colcon_pkg'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_navigation) by extensions ['colcon_meta']
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_navigation) by extension 'colcon_meta'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_navigation) by extensions ['ros']
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_navigation) by extension 'ros'
+[0.305s] DEBUG:colcon.colcon_core.package_identification:Package 'src/howdybot_navigation' with type 'ros.ament_python' and name 'howdybot_navigation'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_perception) by extensions ['ignore', 'ignore_ament_install']
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_perception) by extension 'ignore'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_perception) by extension 'ignore_ament_install'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_perception) by extensions ['colcon_pkg']
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_perception) by extension 'colcon_pkg'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_perception) by extensions ['colcon_meta']
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_perception) by extension 'colcon_meta'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_perception) by extensions ['ros']
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_perception) by extension 'ros'
+[0.306s] DEBUG:colcon.colcon_core.package_identification:Package 'src/howdybot_perception' with type 'ros.ament_python' and name 'howdybot_perception'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_peripherals) by extensions ['ignore', 'ignore_ament_install']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_peripherals) by extension 'ignore'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_peripherals) by extension 'ignore_ament_install'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_peripherals) by extensions ['colcon_pkg']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_peripherals) by extension 'colcon_pkg'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_peripherals) by extensions ['colcon_meta']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_peripherals) by extension 'colcon_meta'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_peripherals) by extensions ['ros']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_peripherals) by extension 'ros'
+[0.307s] DEBUG:colcon.colcon_core.package_identification:Package 'src/howdybot_peripherals' with type 'ros.ament_python' and name 'howdybot_peripherals'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_simulation) by extensions ['ignore', 'ignore_ament_install']
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_simulation) by extension 'ignore'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_simulation) by extension 'ignore_ament_install'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_simulation) by extensions ['colcon_pkg']
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_simulation) by extension 'colcon_pkg'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_simulation) by extensions ['colcon_meta']
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_simulation) by extension 'colcon_meta'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_simulation) by extensions ['ros']
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(src/howdybot_simulation) by extension 'ros'
+[0.308s] DEBUG:colcon.colcon_core.package_identification:Package 'src/howdybot_simulation' with type 'ros.ament_python' and name 'howdybot_simulation'
+[0.308s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.308s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.308s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.308s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.308s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.335s] Level 5:colcon.colcon_core.verb:set package 'howdybot_behavior' build argument 'cmake_args' from command line to 'None'
+[0.335s] Level 5:colcon.colcon_core.verb:set package 'howdybot_behavior' build argument 'cmake_target' from command line to 'None'
+[0.335s] Level 5:colcon.colcon_core.verb:set package 'howdybot_behavior' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.335s] Level 5:colcon.colcon_core.verb:set package 'howdybot_behavior' build argument 'cmake_clean_cache' from command line to 'False'
+[0.335s] Level 5:colcon.colcon_core.verb:set package 'howdybot_behavior' build argument 'cmake_clean_first' from command line to 'False'
+[0.335s] Level 5:colcon.colcon_core.verb:set package 'howdybot_behavior' build argument 'cmake_force_configure' from command line to 'False'
+[0.335s] Level 5:colcon.colcon_core.verb:set package 'howdybot_behavior' build argument 'ament_cmake_args' from command line to 'None'
+[0.335s] Level 5:colcon.colcon_core.verb:set package 'howdybot_behavior' build argument 'catkin_cmake_args' from command line to 'None'
+[0.335s] Level 5:colcon.colcon_core.verb:set package 'howdybot_behavior' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.335s] DEBUG:colcon.colcon_core.verb:Building package 'howdybot_behavior' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ros/howdybot/ws/build/howdybot_behavior', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ros/howdybot/ws/install/howdybot_behavior', 'merge_install': False, 'path': '/home/ros/howdybot/ws/src/howdybot_behavior', 'symlink_install': False, 'test_result_base': None}
+[0.335s] Level 5:colcon.colcon_core.verb:set package 'howdybot_bringup' build argument 'cmake_args' from command line to 'None'
+[0.335s] Level 5:colcon.colcon_core.verb:set package 'howdybot_bringup' build argument 'cmake_target' from command line to 'None'
+[0.335s] Level 5:colcon.colcon_core.verb:set package 'howdybot_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.335s] Level 5:colcon.colcon_core.verb:set package 'howdybot_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.335s] Level 5:colcon.colcon_core.verb:set package 'howdybot_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.335s] Level 5:colcon.colcon_core.verb:set package 'howdybot_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.335s] Level 5:colcon.colcon_core.verb:set package 'howdybot_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.335s] Level 5:colcon.colcon_core.verb:set package 'howdybot_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.335s] Level 5:colcon.colcon_core.verb:set package 'howdybot_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.335s] DEBUG:colcon.colcon_core.verb:Building package 'howdybot_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ros/howdybot/ws/build/howdybot_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ros/howdybot/ws/install/howdybot_bringup', 'merge_install': False, 'path': '/home/ros/howdybot/ws/src/howdybot_bringup', 'symlink_install': False, 'test_result_base': None}
+[0.335s] Level 5:colcon.colcon_core.verb:set package 'howdybot_description' build argument 'cmake_args' from command line to 'None'
+[0.335s] Level 5:colcon.colcon_core.verb:set package 'howdybot_description' build argument 'cmake_target' from command line to 'None'
+[0.335s] Level 5:colcon.colcon_core.verb:set package 'howdybot_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.335s] Level 5:colcon.colcon_core.verb:set package 'howdybot_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.335s] Level 5:colcon.colcon_core.verb:set package 'howdybot_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.335s] Level 5:colcon.colcon_core.verb:set package 'howdybot_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.335s] Level 5:colcon.colcon_core.verb:set package 'howdybot_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'howdybot_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'howdybot_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.336s] DEBUG:colcon.colcon_core.verb:Building package 'howdybot_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ros/howdybot/ws/build/howdybot_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ros/howdybot/ws/install/howdybot_description', 'merge_install': False, 'path': '/home/ros/howdybot/ws/src/howdybot_description', 'symlink_install': False, 'test_result_base': None}
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'howdybot_hardware' build argument 'cmake_args' from command line to 'None'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'howdybot_hardware' build argument 'cmake_target' from command line to 'None'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'howdybot_hardware' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'howdybot_hardware' build argument 'cmake_clean_cache' from command line to 'False'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'howdybot_hardware' build argument 'cmake_clean_first' from command line to 'False'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'howdybot_hardware' build argument 'cmake_force_configure' from command line to 'False'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'howdybot_hardware' build argument 'ament_cmake_args' from command line to 'None'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'howdybot_hardware' build argument 'catkin_cmake_args' from command line to 'None'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'howdybot_hardware' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.336s] DEBUG:colcon.colcon_core.verb:Building package 'howdybot_hardware' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ros/howdybot/ws/build/howdybot_hardware', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ros/howdybot/ws/install/howdybot_hardware', 'merge_install': False, 'path': '/home/ros/howdybot/ws/src/howdybot_hardware', 'symlink_install': False, 'test_result_base': None}
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'howdybot_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'howdybot_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'howdybot_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'howdybot_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'howdybot_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'howdybot_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'howdybot_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'howdybot_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'howdybot_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.336s] DEBUG:colcon.colcon_core.verb:Building package 'howdybot_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ros/howdybot/ws/build/howdybot_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ros/howdybot/ws/install/howdybot_interfaces', 'merge_install': False, 'path': '/home/ros/howdybot/ws/src/howdybot_interfaces', 'symlink_install': False, 'test_result_base': None}
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'howdybot_navigation' build argument 'cmake_args' from command line to 'None'
+[0.337s] Level 5:colcon.colcon_core.verb:set package 'howdybot_navigation' build argument 'cmake_target' from command line to 'None'
+[0.337s] Level 5:colcon.colcon_core.verb:set package 'howdybot_navigation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.337s] Level 5:colcon.colcon_core.verb:set package 'howdybot_navigation' build argument 'cmake_clean_cache' from command line to 'False'
+[0.337s] Level 5:colcon.colcon_core.verb:set package 'howdybot_navigation' build argument 'cmake_clean_first' from command line to 'False'
+[0.337s] Level 5:colcon.colcon_core.verb:set package 'howdybot_navigation' build argument 'cmake_force_configure' from command line to 'False'
+[0.337s] Level 5:colcon.colcon_core.verb:set package 'howdybot_navigation' build argument 'ament_cmake_args' from command line to 'None'
+[0.337s] Level 5:colcon.colcon_core.verb:set package 'howdybot_navigation' build argument 'catkin_cmake_args' from command line to 'None'
+[0.337s] Level 5:colcon.colcon_core.verb:set package 'howdybot_navigation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.337s] DEBUG:colcon.colcon_core.verb:Building package 'howdybot_navigation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ros/howdybot/ws/build/howdybot_navigation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ros/howdybot/ws/install/howdybot_navigation', 'merge_install': False, 'path': '/home/ros/howdybot/ws/src/howdybot_navigation', 'symlink_install': False, 'test_result_base': None}
+[0.337s] Level 5:colcon.colcon_core.verb:set package 'howdybot_perception' build argument 'cmake_args' from command line to 'None'
+[0.337s] Level 5:colcon.colcon_core.verb:set package 'howdybot_perception' build argument 'cmake_target' from command line to 'None'
+[0.337s] Level 5:colcon.colcon_core.verb:set package 'howdybot_perception' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.337s] Level 5:colcon.colcon_core.verb:set package 'howdybot_perception' build argument 'cmake_clean_cache' from command line to 'False'
+[0.337s] Level 5:colcon.colcon_core.verb:set package 'howdybot_perception' build argument 'cmake_clean_first' from command line to 'False'
+[0.337s] Level 5:colcon.colcon_core.verb:set package 'howdybot_perception' build argument 'cmake_force_configure' from command line to 'False'
+[0.337s] Level 5:colcon.colcon_core.verb:set package 'howdybot_perception' build argument 'ament_cmake_args' from command line to 'None'
+[0.337s] Level 5:colcon.colcon_core.verb:set package 'howdybot_perception' build argument 'catkin_cmake_args' from command line to 'None'
+[0.337s] Level 5:colcon.colcon_core.verb:set package 'howdybot_perception' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.337s] DEBUG:colcon.colcon_core.verb:Building package 'howdybot_perception' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ros/howdybot/ws/build/howdybot_perception', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ros/howdybot/ws/install/howdybot_perception', 'merge_install': False, 'path': '/home/ros/howdybot/ws/src/howdybot_perception', 'symlink_install': False, 'test_result_base': None}
+[0.337s] Level 5:colcon.colcon_core.verb:set package 'howdybot_peripherals' build argument 'cmake_args' from command line to 'None'
+[0.337s] Level 5:colcon.colcon_core.verb:set package 'howdybot_peripherals' build argument 'cmake_target' from command line to 'None'
+[0.337s] Level 5:colcon.colcon_core.verb:set package 'howdybot_peripherals' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.337s] Level 5:colcon.colcon_core.verb:set package 'howdybot_peripherals' build argument 'cmake_clean_cache' from command line to 'False'
+[0.337s] Level 5:colcon.colcon_core.verb:set package 'howdybot_peripherals' build argument 'cmake_clean_first' from command line to 'False'
+[0.337s] Level 5:colcon.colcon_core.verb:set package 'howdybot_peripherals' build argument 'cmake_force_configure' from command line to 'False'
+[0.337s] Level 5:colcon.colcon_core.verb:set package 'howdybot_peripherals' build argument 'ament_cmake_args' from command line to 'None'
+[0.337s] Level 5:colcon.colcon_core.verb:set package 'howdybot_peripherals' build argument 'catkin_cmake_args' from command line to 'None'
+[0.337s] Level 5:colcon.colcon_core.verb:set package 'howdybot_peripherals' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.337s] DEBUG:colcon.colcon_core.verb:Building package 'howdybot_peripherals' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ros/howdybot/ws/build/howdybot_peripherals', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ros/howdybot/ws/install/howdybot_peripherals', 'merge_install': False, 'path': '/home/ros/howdybot/ws/src/howdybot_peripherals', 'symlink_install': False, 'test_result_base': None}
+[0.337s] Level 5:colcon.colcon_core.verb:set package 'howdybot_simulation' build argument 'cmake_args' from command line to 'None'
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'howdybot_simulation' build argument 'cmake_target' from command line to 'None'
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'howdybot_simulation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'howdybot_simulation' build argument 'cmake_clean_cache' from command line to 'False'
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'howdybot_simulation' build argument 'cmake_clean_first' from command line to 'False'
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'howdybot_simulation' build argument 'cmake_force_configure' from command line to 'False'
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'howdybot_simulation' build argument 'ament_cmake_args' from command line to 'None'
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'howdybot_simulation' build argument 'catkin_cmake_args' from command line to 'None'
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'howdybot_simulation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.338s] DEBUG:colcon.colcon_core.verb:Building package 'howdybot_simulation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ros/howdybot/ws/build/howdybot_simulation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ros/howdybot/ws/install/howdybot_simulation', 'merge_install': False, 'path': '/home/ros/howdybot/ws/src/howdybot_simulation', 'symlink_install': False, 'test_result_base': None}
+[0.338s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.339s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.339s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ros/howdybot/ws/src/howdybot_behavior' with build type 'ament_python'
+[0.339s] Level 1:colcon.colcon_core.shell:create_environment_hook('howdybot_behavior', 'ament_prefix_path')
+[0.344s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.344s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/howdybot/ws/install/howdybot_behavior/share/howdybot_behavior/hook/ament_prefix_path.ps1'
+[0.345s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/howdybot/ws/install/howdybot_behavior/share/howdybot_behavior/hook/ament_prefix_path.dsv'
+[0.346s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/howdybot/ws/install/howdybot_behavior/share/howdybot_behavior/hook/ament_prefix_path.sh'
+[0.348s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.348s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.357s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ros/howdybot/ws/src/howdybot_bringup' with build type 'ament_python'
+[0.357s] Level 1:colcon.colcon_core.shell:create_environment_hook('howdybot_bringup', 'ament_prefix_path')
+[0.358s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/howdybot/ws/install/howdybot_bringup/share/howdybot_bringup/hook/ament_prefix_path.ps1'
+[0.358s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/howdybot/ws/install/howdybot_bringup/share/howdybot_bringup/hook/ament_prefix_path.dsv'
+[0.359s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/howdybot/ws/install/howdybot_bringup/share/howdybot_bringup/hook/ament_prefix_path.sh'
+[0.359s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.359s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.363s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ros/howdybot/ws/src/howdybot_description' with build type 'ament_cmake'
+[0.363s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ros/howdybot/ws/src/howdybot_description'
+[0.363s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.364s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.368s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ros/howdybot/ws/src/howdybot_hardware' with build type 'ament_cmake'
+[0.368s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ros/howdybot/ws/src/howdybot_hardware'
+[0.368s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.369s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.372s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ros/howdybot/ws/src/howdybot_interfaces' with build type 'ament_cmake'
+[0.373s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ros/howdybot/ws/src/howdybot_interfaces'
+[0.373s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.373s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.378s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ros/howdybot/ws/src/howdybot_navigation' with build type 'ament_python'
+[0.378s] Level 1:colcon.colcon_core.shell:create_environment_hook('howdybot_navigation', 'ament_prefix_path')
+[0.379s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/howdybot/ws/install/howdybot_navigation/share/howdybot_navigation/hook/ament_prefix_path.ps1'
+[0.379s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/howdybot/ws/install/howdybot_navigation/share/howdybot_navigation/hook/ament_prefix_path.dsv'
+[0.379s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/howdybot/ws/install/howdybot_navigation/share/howdybot_navigation/hook/ament_prefix_path.sh'
+[0.380s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.380s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.384s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ros/howdybot/ws/src/howdybot_perception' with build type 'ament_python'
+[0.384s] Level 1:colcon.colcon_core.shell:create_environment_hook('howdybot_perception', 'ament_prefix_path')
+[0.384s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/howdybot/ws/install/howdybot_perception/share/howdybot_perception/hook/ament_prefix_path.ps1'
+[0.385s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/howdybot/ws/install/howdybot_perception/share/howdybot_perception/hook/ament_prefix_path.dsv'
+[0.385s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/howdybot/ws/install/howdybot_perception/share/howdybot_perception/hook/ament_prefix_path.sh'
+[0.386s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.386s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.391s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ros/howdybot/ws/src/howdybot_peripherals' with build type 'ament_python'
+[0.391s] Level 1:colcon.colcon_core.shell:create_environment_hook('howdybot_peripherals', 'ament_prefix_path')
+[0.391s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/howdybot/ws/install/howdybot_peripherals/share/howdybot_peripherals/hook/ament_prefix_path.ps1'
+[0.392s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/howdybot/ws/install/howdybot_peripherals/share/howdybot_peripherals/hook/ament_prefix_path.dsv'
+[0.392s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/howdybot/ws/install/howdybot_peripherals/share/howdybot_peripherals/hook/ament_prefix_path.sh'
+[0.393s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.393s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.397s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ros/howdybot/ws/src/howdybot_simulation' with build type 'ament_python'
+[0.398s] Level 1:colcon.colcon_core.shell:create_environment_hook('howdybot_simulation', 'ament_prefix_path')
+[0.398s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/howdybot/ws/install/howdybot_simulation/share/howdybot_simulation/hook/ament_prefix_path.ps1'
+[0.398s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/howdybot/ws/install/howdybot_simulation/share/howdybot_simulation/hook/ament_prefix_path.dsv'
+[0.399s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/howdybot/ws/install/howdybot_simulation/share/howdybot_simulation/hook/ament_prefix_path.sh'
+[0.399s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.399s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.574s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ros/howdybot/ws/src/howdybot_behavior'
+[0.575s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.575s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.729s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ros/howdybot/ws/src/howdybot_bringup'
+[0.729s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.730s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.738s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ros/howdybot/ws/build/howdybot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/howdybot/ws/install/howdybot_simulation:/home/ros/howdybot/ws/install/howdybot_peripherals:/home/ros/howdybot/ws/install/howdybot_perception:/home/ros/howdybot/ws/install/howdybot_navigation:/home/ros/howdybot/ws/install/howdybot_bringup:/home/ros/howdybot/ws/install/howdybot_behavior:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ros/howdybot/ws/build/howdybot_description -- -j12 -l12
+[0.744s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ros/howdybot/ws/build/howdybot_hardware': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/howdybot/ws/install/howdybot_simulation:/home/ros/howdybot/ws/install/howdybot_peripherals:/home/ros/howdybot/ws/install/howdybot_perception:/home/ros/howdybot/ws/install/howdybot_navigation:/home/ros/howdybot/ws/install/howdybot_bringup:/home/ros/howdybot/ws/install/howdybot_behavior:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ros/howdybot/ws/build/howdybot_hardware -- -j12 -l12
+[0.746s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ros/howdybot/ws/build/howdybot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/howdybot/ws/install/howdybot_simulation:/home/ros/howdybot/ws/install/howdybot_peripherals:/home/ros/howdybot/ws/install/howdybot_perception:/home/ros/howdybot/ws/install/howdybot_navigation:/home/ros/howdybot/ws/install/howdybot_bringup:/home/ros/howdybot/ws/install/howdybot_behavior:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ros/howdybot/ws/build/howdybot_interfaces -- -j12 -l12
+[1.013s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ros/howdybot/ws/src/howdybot_navigation'
+[1.013s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.013s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.186s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ros/howdybot/ws/src/howdybot_perception'
+[1.186s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.186s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.343s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ros/howdybot/ws/src/howdybot_peripherals'
+[1.344s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.344s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.354s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ros/howdybot/ws/build/howdybot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/howdybot/ws/install/howdybot_simulation:/home/ros/howdybot/ws/install/howdybot_peripherals:/home/ros/howdybot/ws/install/howdybot_perception:/home/ros/howdybot/ws/install/howdybot_navigation:/home/ros/howdybot/ws/install/howdybot_bringup:/home/ros/howdybot/ws/install/howdybot_behavior:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ros/howdybot/ws/build/howdybot_description -- -j12 -l12
+[1.370s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ros/howdybot/ws/build/howdybot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/howdybot/ws/install/howdybot_simulation:/home/ros/howdybot/ws/install/howdybot_peripherals:/home/ros/howdybot/ws/install/howdybot_perception:/home/ros/howdybot/ws/install/howdybot_navigation:/home/ros/howdybot/ws/install/howdybot_bringup:/home/ros/howdybot/ws/install/howdybot_behavior:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ros/howdybot/ws/build/howdybot_description
+[1.370s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ros/howdybot/ws/build/howdybot_hardware' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/howdybot/ws/install/howdybot_simulation:/home/ros/howdybot/ws/install/howdybot_peripherals:/home/ros/howdybot/ws/install/howdybot_perception:/home/ros/howdybot/ws/install/howdybot_navigation:/home/ros/howdybot/ws/install/howdybot_bringup:/home/ros/howdybot/ws/install/howdybot_behavior:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ros/howdybot/ws/build/howdybot_hardware -- -j12 -l12
+[1.372s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ros/howdybot/ws/build/howdybot_hardware': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/howdybot/ws/install/howdybot_simulation:/home/ros/howdybot/ws/install/howdybot_peripherals:/home/ros/howdybot/ws/install/howdybot_perception:/home/ros/howdybot/ws/install/howdybot_navigation:/home/ros/howdybot/ws/install/howdybot_bringup:/home/ros/howdybot/ws/install/howdybot_behavior:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ros/howdybot/ws/build/howdybot_hardware
+[1.372s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ros/howdybot/ws/build/howdybot_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/howdybot/ws/install/howdybot_simulation:/home/ros/howdybot/ws/install/howdybot_peripherals:/home/ros/howdybot/ws/install/howdybot_perception:/home/ros/howdybot/ws/install/howdybot_navigation:/home/ros/howdybot/ws/install/howdybot_bringup:/home/ros/howdybot/ws/install/howdybot_behavior:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ros/howdybot/ws/build/howdybot_interfaces -- -j12 -l12
+[1.374s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ros/howdybot/ws/build/howdybot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/howdybot/ws/install/howdybot_simulation:/home/ros/howdybot/ws/install/howdybot_peripherals:/home/ros/howdybot/ws/install/howdybot_perception:/home/ros/howdybot/ws/install/howdybot_navigation:/home/ros/howdybot/ws/install/howdybot_bringup:/home/ros/howdybot/ws/install/howdybot_behavior:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ros/howdybot/ws/build/howdybot_interfaces
+[1.527s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ros/howdybot/ws/src/howdybot_simulation'
+[1.527s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.527s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.553s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(howdybot_hardware)
+[1.553s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ros/howdybot/ws/build/howdybot_hardware' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/howdybot/ws/install/howdybot_simulation:/home/ros/howdybot/ws/install/howdybot_peripherals:/home/ros/howdybot/ws/install/howdybot_perception:/home/ros/howdybot/ws/install/howdybot_navigation:/home/ros/howdybot/ws/install/howdybot_bringup:/home/ros/howdybot/ws/install/howdybot_behavior:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ros/howdybot/ws/build/howdybot_hardware
+[1.559s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_hardware' for CMake module files
+[1.560s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_hardware' for CMake config files
+[1.560s] Level 1:colcon.colcon_core.shell:create_environment_hook('howdybot_hardware', 'cmake_prefix_path')
+[1.560s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/howdybot/ws/install/howdybot_hardware/share/howdybot_hardware/hook/cmake_prefix_path.ps1'
+[1.561s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/howdybot/ws/install/howdybot_hardware/share/howdybot_hardware/hook/cmake_prefix_path.dsv'
+[1.561s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/howdybot/ws/install/howdybot_hardware/share/howdybot_hardware/hook/cmake_prefix_path.sh'
+[1.562s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_hardware/bin'
+[1.562s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_hardware/lib/pkgconfig/howdybot_hardware.pc'
+[1.562s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_hardware/lib/python3.12/site-packages'
+[1.562s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_hardware/bin'
+[1.563s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/howdybot/ws/install/howdybot_hardware/share/howdybot_hardware/package.ps1'
+[1.563s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ros/howdybot/ws/install/howdybot_hardware/share/howdybot_hardware/package.dsv'
+[1.564s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/howdybot/ws/install/howdybot_hardware/share/howdybot_hardware/package.sh'
+[1.565s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/howdybot/ws/install/howdybot_hardware/share/howdybot_hardware/package.bash'
+[1.566s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/howdybot/ws/install/howdybot_hardware/share/howdybot_hardware/package.zsh'
+[1.567s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ros/howdybot/ws/install/howdybot_hardware/share/colcon-core/packages/howdybot_hardware)
+[1.567s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(howdybot_hardware)
+[1.568s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_hardware' for CMake module files
+[1.568s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_hardware' for CMake config files
+[1.569s] Level 1:colcon.colcon_core.shell:create_environment_hook('howdybot_hardware', 'cmake_prefix_path')
+[1.569s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/howdybot/ws/install/howdybot_hardware/share/howdybot_hardware/hook/cmake_prefix_path.ps1'
+[1.569s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/howdybot/ws/install/howdybot_hardware/share/howdybot_hardware/hook/cmake_prefix_path.dsv'
+[1.569s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/howdybot/ws/install/howdybot_hardware/share/howdybot_hardware/hook/cmake_prefix_path.sh'
+[1.570s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_hardware/bin'
+[1.570s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_hardware/lib/pkgconfig/howdybot_hardware.pc'
+[1.570s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_hardware/lib/python3.12/site-packages'
+[1.570s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_hardware/bin'
+[1.571s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/howdybot/ws/install/howdybot_hardware/share/howdybot_hardware/package.ps1'
+[1.571s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ros/howdybot/ws/install/howdybot_hardware/share/howdybot_hardware/package.dsv'
+[1.572s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/howdybot/ws/install/howdybot_hardware/share/howdybot_hardware/package.sh'
+[1.572s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/howdybot/ws/install/howdybot_hardware/share/howdybot_hardware/package.bash'
+[1.572s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/howdybot/ws/install/howdybot_hardware/share/howdybot_hardware/package.zsh'
+[1.573s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ros/howdybot/ws/install/howdybot_hardware/share/colcon-core/packages/howdybot_hardware)
+[1.573s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(howdybot_description)
+[1.573s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_description' for CMake module files
+[1.575s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ros/howdybot/ws/build/howdybot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/howdybot/ws/install/howdybot_simulation:/home/ros/howdybot/ws/install/howdybot_peripherals:/home/ros/howdybot/ws/install/howdybot_perception:/home/ros/howdybot/ws/install/howdybot_navigation:/home/ros/howdybot/ws/install/howdybot_bringup:/home/ros/howdybot/ws/install/howdybot_behavior:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ros/howdybot/ws/build/howdybot_description
+[1.575s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_description' for CMake config files
+[1.575s] Level 1:colcon.colcon_core.shell:create_environment_hook('howdybot_description', 'cmake_prefix_path')
+[1.575s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/howdybot/ws/install/howdybot_description/share/howdybot_description/hook/cmake_prefix_path.ps1'
+[1.576s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/howdybot/ws/install/howdybot_description/share/howdybot_description/hook/cmake_prefix_path.dsv'
+[1.576s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/howdybot/ws/install/howdybot_description/share/howdybot_description/hook/cmake_prefix_path.sh'
+[1.577s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_description/bin'
+[1.577s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_description/lib/pkgconfig/howdybot_description.pc'
+[1.577s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_description/lib/python3.12/site-packages'
+[1.577s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_description/bin'
+[1.578s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/howdybot/ws/install/howdybot_description/share/howdybot_description/package.ps1'
+[1.578s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ros/howdybot/ws/install/howdybot_description/share/howdybot_description/package.dsv'
+[1.578s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/howdybot/ws/install/howdybot_description/share/howdybot_description/package.sh'
+[1.579s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/howdybot/ws/install/howdybot_description/share/howdybot_description/package.bash'
+[1.579s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/howdybot/ws/install/howdybot_description/share/howdybot_description/package.zsh'
+[1.580s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ros/howdybot/ws/install/howdybot_description/share/colcon-core/packages/howdybot_description)
+[1.580s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(howdybot_description)
+[1.580s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_description' for CMake module files
+[1.581s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_description' for CMake config files
+[1.581s] Level 1:colcon.colcon_core.shell:create_environment_hook('howdybot_description', 'cmake_prefix_path')
+[1.582s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/howdybot/ws/install/howdybot_description/share/howdybot_description/hook/cmake_prefix_path.ps1'
+[1.582s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/howdybot/ws/install/howdybot_description/share/howdybot_description/hook/cmake_prefix_path.dsv'
+[1.582s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/howdybot/ws/install/howdybot_description/share/howdybot_description/hook/cmake_prefix_path.sh'
+[1.583s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_description/bin'
+[1.583s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_description/lib/pkgconfig/howdybot_description.pc'
+[1.583s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_description/lib/python3.12/site-packages'
+[1.584s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_description/bin'
+[1.584s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/howdybot/ws/install/howdybot_description/share/howdybot_description/package.ps1'
+[1.584s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ros/howdybot/ws/install/howdybot_description/share/howdybot_description/package.dsv'
+[1.585s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/howdybot/ws/install/howdybot_description/share/howdybot_description/package.sh'
+[1.585s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/howdybot/ws/install/howdybot_description/share/howdybot_description/package.bash'
+[1.586s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/howdybot/ws/install/howdybot_description/share/howdybot_description/package.zsh'
+[1.586s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ros/howdybot/ws/install/howdybot_description/share/colcon-core/packages/howdybot_description)
+[1.587s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(howdybot_interfaces)
+[1.587s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_interfaces' for CMake module files
+[1.589s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_interfaces' for CMake config files
+[1.589s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ros/howdybot/ws/build/howdybot_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/howdybot/ws/install/howdybot_simulation:/home/ros/howdybot/ws/install/howdybot_peripherals:/home/ros/howdybot/ws/install/howdybot_perception:/home/ros/howdybot/ws/install/howdybot_navigation:/home/ros/howdybot/ws/install/howdybot_bringup:/home/ros/howdybot/ws/install/howdybot_behavior:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ros/howdybot/ws/build/howdybot_interfaces
+[1.590s] Level 1:colcon.colcon_core.shell:create_environment_hook('howdybot_interfaces', 'cmake_prefix_path')
+[1.590s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/howdybot/ws/install/howdybot_interfaces/share/howdybot_interfaces/hook/cmake_prefix_path.ps1'
+[1.590s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/howdybot/ws/install/howdybot_interfaces/share/howdybot_interfaces/hook/cmake_prefix_path.dsv'
+[1.591s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/howdybot/ws/install/howdybot_interfaces/share/howdybot_interfaces/hook/cmake_prefix_path.sh'
+[1.591s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_interfaces/bin'
+[1.591s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_interfaces/lib/pkgconfig/howdybot_interfaces.pc'
+[1.591s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_interfaces/lib/python3.12/site-packages'
+[1.592s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_interfaces/bin'
+[1.592s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/howdybot/ws/install/howdybot_interfaces/share/howdybot_interfaces/package.ps1'
+[1.593s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ros/howdybot/ws/install/howdybot_interfaces/share/howdybot_interfaces/package.dsv'
+[1.593s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/howdybot/ws/install/howdybot_interfaces/share/howdybot_interfaces/package.sh'
+[1.594s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/howdybot/ws/install/howdybot_interfaces/share/howdybot_interfaces/package.bash'
+[1.595s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/howdybot/ws/install/howdybot_interfaces/share/howdybot_interfaces/package.zsh'
+[1.596s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ros/howdybot/ws/install/howdybot_interfaces/share/colcon-core/packages/howdybot_interfaces)
+[1.596s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(howdybot_interfaces)
+[1.596s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_interfaces' for CMake module files
+[1.597s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_interfaces' for CMake config files
+[1.597s] Level 1:colcon.colcon_core.shell:create_environment_hook('howdybot_interfaces', 'cmake_prefix_path')
+[1.597s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/howdybot/ws/install/howdybot_interfaces/share/howdybot_interfaces/hook/cmake_prefix_path.ps1'
+[1.598s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/howdybot/ws/install/howdybot_interfaces/share/howdybot_interfaces/hook/cmake_prefix_path.dsv'
+[1.598s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/howdybot/ws/install/howdybot_interfaces/share/howdybot_interfaces/hook/cmake_prefix_path.sh'
+[1.599s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_interfaces/bin'
+[1.599s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_interfaces/lib/pkgconfig/howdybot_interfaces.pc'
+[1.599s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_interfaces/lib/python3.12/site-packages'
+[1.599s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_interfaces/bin'
+[1.600s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/howdybot/ws/install/howdybot_interfaces/share/howdybot_interfaces/package.ps1'
+[1.601s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ros/howdybot/ws/install/howdybot_interfaces/share/howdybot_interfaces/package.dsv'
+[1.601s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/howdybot/ws/install/howdybot_interfaces/share/howdybot_interfaces/package.sh'
+[1.601s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/howdybot/ws/install/howdybot_interfaces/share/howdybot_interfaces/package.bash'
+[1.602s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/howdybot/ws/install/howdybot_interfaces/share/howdybot_interfaces/package.zsh'
+[1.602s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ros/howdybot/ws/install/howdybot_interfaces/share/colcon-core/packages/howdybot_interfaces)
+[2.241s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: bdist_rpm, develop, install_lib, bdist_egg, bdist, upload, editable_wheel, install_egg_info, dist_info, build, check, sdist, rotate, register, symlink_data, install_headers, bdist_dumb, build_scripts, easy_install, install, setopt, bdist_wheel, saveopts, clean, alias, upload_docs, build_clib, egg_info, install_data, build_ext, install_scripts, test, build_py
+[2.243s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: bdist_rpm, develop, install_lib, bdist_egg, bdist, upload, editable_wheel, install_egg_info, dist_info, build, check, sdist, rotate, register, symlink_data, install_headers, bdist_dumb, build_scripts, easy_install, install, setopt, bdist_wheel, saveopts, clean, alias, upload_docs, build_clib, egg_info, install_data, build_ext, install_scripts, test, build_py
+[2.245s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: bdist_rpm, develop, install_lib, bdist_egg, bdist, upload, editable_wheel, install_egg_info, dist_info, build, check, sdist, rotate, register, symlink_data, install_headers, bdist_dumb, build_scripts, easy_install, install, setopt, bdist_wheel, saveopts, clean, alias, upload_docs, build_clib, egg_info, install_data, build_ext, install_scripts, test, build_py
+[2.247s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ros/howdybot/ws/src/howdybot_perception': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ros/howdybot/ws/build/howdybot_perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros/howdybot/ws/install/howdybot_perception/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/howdybot_perception build --build-base /home/ros/howdybot/ws/build/howdybot_perception/build install --record /home/ros/howdybot/ws/build/howdybot_perception/install.log --install-scripts $base/lib/howdybot_perception --single-version-externally-managed install_data
+[2.248s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ros/howdybot/ws/src/howdybot_behavior': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ros/howdybot/ws/build/howdybot_behavior/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros/howdybot/ws/install/howdybot_behavior/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/howdybot_behavior build --build-base /home/ros/howdybot/ws/build/howdybot_behavior/build install --record /home/ros/howdybot/ws/build/howdybot_behavior/install.log --install-scripts $base/lib/howdybot_behavior --single-version-externally-managed install_data
+[2.250s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ros/howdybot/ws/src/howdybot_peripherals': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ros/howdybot/ws/build/howdybot_peripherals/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros/howdybot/ws/install/howdybot_peripherals/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/howdybot_peripherals build --build-base /home/ros/howdybot/ws/build/howdybot_peripherals/build install --record /home/ros/howdybot/ws/build/howdybot_peripherals/install.log --install-scripts $base/lib/howdybot_peripherals --single-version-externally-managed install_data
+[2.255s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: bdist_rpm, develop, install_lib, bdist_egg, bdist, upload, editable_wheel, install_egg_info, dist_info, build, check, sdist, rotate, register, symlink_data, install_headers, bdist_dumb, build_scripts, easy_install, install, setopt, bdist_wheel, saveopts, clean, alias, upload_docs, build_clib, egg_info, install_data, build_ext, install_scripts, test, build_py
+[2.258s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: bdist_rpm, develop, install_lib, bdist_egg, bdist, upload, editable_wheel, install_egg_info, dist_info, build, check, sdist, rotate, register, symlink_data, install_headers, bdist_dumb, build_scripts, easy_install, install, setopt, bdist_wheel, saveopts, clean, alias, upload_docs, build_clib, egg_info, install_data, build_ext, install_scripts, test, build_py
+[2.259s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ros/howdybot/ws/src/howdybot_simulation': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ros/howdybot/ws/build/howdybot_simulation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros/howdybot/ws/install/howdybot_simulation/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/howdybot_simulation build --build-base /home/ros/howdybot/ws/build/howdybot_simulation/build install --record /home/ros/howdybot/ws/build/howdybot_simulation/install.log --install-scripts $base/lib/howdybot_simulation --single-version-externally-managed install_data
+[2.261s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: bdist_rpm, develop, install_lib, bdist_egg, bdist, upload, editable_wheel, install_egg_info, dist_info, build, check, sdist, rotate, register, symlink_data, install_headers, bdist_dumb, build_scripts, easy_install, install, setopt, bdist_wheel, saveopts, clean, alias, upload_docs, build_clib, egg_info, install_data, build_ext, install_scripts, test, build_py
+[2.262s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ros/howdybot/ws/src/howdybot_navigation': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ros/howdybot/ws/build/howdybot_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros/howdybot/ws/install/howdybot_navigation/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/howdybot_navigation build --build-base /home/ros/howdybot/ws/build/howdybot_navigation/build install --record /home/ros/howdybot/ws/build/howdybot_navigation/install.log --install-scripts $base/lib/howdybot_navigation --single-version-externally-managed install_data
+[2.265s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ros/howdybot/ws/src/howdybot_bringup': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ros/howdybot/ws/build/howdybot_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros/howdybot/ws/install/howdybot_bringup/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/howdybot_bringup build --build-base /home/ros/howdybot/ws/build/howdybot_bringup/build install --record /home/ros/howdybot/ws/build/howdybot_bringup/install.log --install-scripts $base/lib/howdybot_bringup --single-version-externally-managed install_data
+[2.726s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_navigation' for CMake module files
+[2.726s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ros/howdybot/ws/src/howdybot_navigation' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ros/howdybot/ws/build/howdybot_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros/howdybot/ws/install/howdybot_navigation/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/howdybot_navigation build --build-base /home/ros/howdybot/ws/build/howdybot_navigation/build install --record /home/ros/howdybot/ws/build/howdybot_navigation/install.log --install-scripts $base/lib/howdybot_navigation --single-version-externally-managed install_data
+[2.727s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_navigation' for CMake config files
+[2.727s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_navigation/lib'
+[2.728s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_navigation/bin'
+[2.728s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_navigation/lib/pkgconfig/howdybot_navigation.pc'
+[2.728s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_navigation/lib/python3.12/site-packages'
+[2.728s] Level 1:colcon.colcon_core.shell:create_environment_hook('howdybot_navigation', 'pythonpath')
+[2.728s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/howdybot/ws/install/howdybot_navigation/share/howdybot_navigation/hook/pythonpath.ps1'
+[2.729s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/howdybot/ws/install/howdybot_navigation/share/howdybot_navigation/hook/pythonpath.dsv'
+[2.729s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/howdybot/ws/install/howdybot_navigation/share/howdybot_navigation/hook/pythonpath.sh'
+[2.730s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_navigation/bin'
+[2.730s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(howdybot_navigation)
+[2.730s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/howdybot/ws/install/howdybot_navigation/share/howdybot_navigation/package.ps1'
+[2.730s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ros/howdybot/ws/install/howdybot_navigation/share/howdybot_navigation/package.dsv'
+[2.731s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/howdybot/ws/install/howdybot_navigation/share/howdybot_navigation/package.sh'
+[2.731s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/howdybot/ws/install/howdybot_navigation/share/howdybot_navigation/package.bash'
+[2.731s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/howdybot/ws/install/howdybot_navigation/share/howdybot_navigation/package.zsh'
+[2.732s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ros/howdybot/ws/install/howdybot_navigation/share/colcon-core/packages/howdybot_navigation)
+[2.734s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_behavior' for CMake module files
+[2.735s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ros/howdybot/ws/src/howdybot_behavior' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ros/howdybot/ws/build/howdybot_behavior/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros/howdybot/ws/install/howdybot_behavior/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/howdybot_behavior build --build-base /home/ros/howdybot/ws/build/howdybot_behavior/build install --record /home/ros/howdybot/ws/build/howdybot_behavior/install.log --install-scripts $base/lib/howdybot_behavior --single-version-externally-managed install_data
+[2.736s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_behavior' for CMake config files
+[2.736s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_behavior/lib'
+[2.736s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_behavior/bin'
+[2.737s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_behavior/lib/pkgconfig/howdybot_behavior.pc'
+[2.737s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_behavior/lib/python3.12/site-packages'
+[2.737s] Level 1:colcon.colcon_core.shell:create_environment_hook('howdybot_behavior', 'pythonpath')
+[2.737s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/howdybot/ws/install/howdybot_behavior/share/howdybot_behavior/hook/pythonpath.ps1'
+[2.737s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/howdybot/ws/install/howdybot_behavior/share/howdybot_behavior/hook/pythonpath.dsv'
+[2.738s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/howdybot/ws/install/howdybot_behavior/share/howdybot_behavior/hook/pythonpath.sh'
+[2.738s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_behavior/bin'
+[2.738s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(howdybot_behavior)
+[2.738s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/howdybot/ws/install/howdybot_behavior/share/howdybot_behavior/package.ps1'
+[2.739s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ros/howdybot/ws/install/howdybot_behavior/share/howdybot_behavior/package.dsv'
+[2.739s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/howdybot/ws/install/howdybot_behavior/share/howdybot_behavior/package.sh'
+[2.740s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/howdybot/ws/install/howdybot_behavior/share/howdybot_behavior/package.bash'
+[2.740s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/howdybot/ws/install/howdybot_behavior/share/howdybot_behavior/package.zsh'
+[2.741s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ros/howdybot/ws/install/howdybot_behavior/share/colcon-core/packages/howdybot_behavior)
+[2.741s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_perception' for CMake module files
+[2.743s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_perception' for CMake config files
+[2.743s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ros/howdybot/ws/src/howdybot_perception' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ros/howdybot/ws/build/howdybot_perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros/howdybot/ws/install/howdybot_perception/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/howdybot_perception build --build-base /home/ros/howdybot/ws/build/howdybot_perception/build install --record /home/ros/howdybot/ws/build/howdybot_perception/install.log --install-scripts $base/lib/howdybot_perception --single-version-externally-managed install_data
+[2.743s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_perception/lib'
+[2.744s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_perception/bin'
+[2.744s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_perception/lib/pkgconfig/howdybot_perception.pc'
+[2.744s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_perception/lib/python3.12/site-packages'
+[2.744s] Level 1:colcon.colcon_core.shell:create_environment_hook('howdybot_perception', 'pythonpath')
+[2.744s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/howdybot/ws/install/howdybot_perception/share/howdybot_perception/hook/pythonpath.ps1'
+[2.745s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/howdybot/ws/install/howdybot_perception/share/howdybot_perception/hook/pythonpath.dsv'
+[2.745s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/howdybot/ws/install/howdybot_perception/share/howdybot_perception/hook/pythonpath.sh'
+[2.746s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_perception/bin'
+[2.746s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(howdybot_perception)
+[2.746s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/howdybot/ws/install/howdybot_perception/share/howdybot_perception/package.ps1'
+[2.747s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ros/howdybot/ws/install/howdybot_perception/share/howdybot_perception/package.dsv'
+[2.747s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/howdybot/ws/install/howdybot_perception/share/howdybot_perception/package.sh'
+[2.748s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/howdybot/ws/install/howdybot_perception/share/howdybot_perception/package.bash'
+[2.748s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/howdybot/ws/install/howdybot_perception/share/howdybot_perception/package.zsh'
+[2.749s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ros/howdybot/ws/install/howdybot_perception/share/colcon-core/packages/howdybot_perception)
+[2.752s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_simulation' for CMake module files
+[2.753s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ros/howdybot/ws/src/howdybot_simulation' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ros/howdybot/ws/build/howdybot_simulation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros/howdybot/ws/install/howdybot_simulation/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/howdybot_simulation build --build-base /home/ros/howdybot/ws/build/howdybot_simulation/build install --record /home/ros/howdybot/ws/build/howdybot_simulation/install.log --install-scripts $base/lib/howdybot_simulation --single-version-externally-managed install_data
+[2.754s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_simulation' for CMake config files
+[2.754s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_simulation/lib'
+[2.754s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_simulation/bin'
+[2.754s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_simulation/lib/pkgconfig/howdybot_simulation.pc'
+[2.755s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_simulation/lib/python3.12/site-packages'
+[2.755s] Level 1:colcon.colcon_core.shell:create_environment_hook('howdybot_simulation', 'pythonpath')
+[2.755s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/howdybot/ws/install/howdybot_simulation/share/howdybot_simulation/hook/pythonpath.ps1'
+[2.755s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/howdybot/ws/install/howdybot_simulation/share/howdybot_simulation/hook/pythonpath.dsv'
+[2.755s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/howdybot/ws/install/howdybot_simulation/share/howdybot_simulation/hook/pythonpath.sh'
+[2.756s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_simulation/bin'
+[2.756s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(howdybot_simulation)
+[2.756s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/howdybot/ws/install/howdybot_simulation/share/howdybot_simulation/package.ps1'
+[2.757s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ros/howdybot/ws/install/howdybot_simulation/share/howdybot_simulation/package.dsv'
+[2.757s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/howdybot/ws/install/howdybot_simulation/share/howdybot_simulation/package.sh'
+[2.758s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/howdybot/ws/install/howdybot_simulation/share/howdybot_simulation/package.bash'
+[2.758s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/howdybot/ws/install/howdybot_simulation/share/howdybot_simulation/package.zsh'
+[2.759s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ros/howdybot/ws/install/howdybot_simulation/share/colcon-core/packages/howdybot_simulation)
+[2.759s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_peripherals' for CMake module files
+[2.761s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_peripherals' for CMake config files
+[2.761s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ros/howdybot/ws/src/howdybot_peripherals' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ros/howdybot/ws/build/howdybot_peripherals/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros/howdybot/ws/install/howdybot_peripherals/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/howdybot_peripherals build --build-base /home/ros/howdybot/ws/build/howdybot_peripherals/build install --record /home/ros/howdybot/ws/build/howdybot_peripherals/install.log --install-scripts $base/lib/howdybot_peripherals --single-version-externally-managed install_data
+[2.761s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_peripherals/lib'
+[2.762s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_peripherals/bin'
+[2.762s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_peripherals/lib/pkgconfig/howdybot_peripherals.pc'
+[2.762s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_peripherals/lib/python3.12/site-packages'
+[2.762s] Level 1:colcon.colcon_core.shell:create_environment_hook('howdybot_peripherals', 'pythonpath')
+[2.762s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/howdybot/ws/install/howdybot_peripherals/share/howdybot_peripherals/hook/pythonpath.ps1'
+[2.762s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/howdybot/ws/install/howdybot_peripherals/share/howdybot_peripherals/hook/pythonpath.dsv'
+[2.763s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/howdybot/ws/install/howdybot_peripherals/share/howdybot_peripherals/hook/pythonpath.sh'
+[2.763s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_peripherals/bin'
+[2.763s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(howdybot_peripherals)
+[2.763s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/howdybot/ws/install/howdybot_peripherals/share/howdybot_peripherals/package.ps1'
+[2.764s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ros/howdybot/ws/install/howdybot_peripherals/share/howdybot_peripherals/package.dsv'
+[2.764s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/howdybot/ws/install/howdybot_peripherals/share/howdybot_peripherals/package.sh'
+[2.765s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/howdybot/ws/install/howdybot_peripherals/share/howdybot_peripherals/package.bash'
+[2.765s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/howdybot/ws/install/howdybot_peripherals/share/howdybot_peripherals/package.zsh'
+[2.765s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ros/howdybot/ws/install/howdybot_peripherals/share/colcon-core/packages/howdybot_peripherals)
+[2.767s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_bringup' for CMake module files
+[2.767s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ros/howdybot/ws/src/howdybot_bringup' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ros/howdybot/ws/build/howdybot_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros/howdybot/ws/install/howdybot_bringup/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/howdybot_bringup build --build-base /home/ros/howdybot/ws/build/howdybot_bringup/build install --record /home/ros/howdybot/ws/build/howdybot_bringup/install.log --install-scripts $base/lib/howdybot_bringup --single-version-externally-managed install_data
+[2.768s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_bringup' for CMake config files
+[2.769s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_bringup/lib'
+[2.769s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_bringup/bin'
+[2.769s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_bringup/lib/pkgconfig/howdybot_bringup.pc'
+[2.769s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_bringup/lib/python3.12/site-packages'
+[2.769s] Level 1:colcon.colcon_core.shell:create_environment_hook('howdybot_bringup', 'pythonpath')
+[2.769s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/howdybot/ws/install/howdybot_bringup/share/howdybot_bringup/hook/pythonpath.ps1'
+[2.770s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/howdybot/ws/install/howdybot_bringup/share/howdybot_bringup/hook/pythonpath.dsv'
+[2.770s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/howdybot/ws/install/howdybot_bringup/share/howdybot_bringup/hook/pythonpath.sh'
+[2.771s] Level 1:colcon.colcon_core.environment:checking '/home/ros/howdybot/ws/install/howdybot_bringup/bin'
+[2.771s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(howdybot_bringup)
+[2.771s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/howdybot/ws/install/howdybot_bringup/share/howdybot_bringup/package.ps1'
+[2.771s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ros/howdybot/ws/install/howdybot_bringup/share/howdybot_bringup/package.dsv'
+[2.772s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/howdybot/ws/install/howdybot_bringup/share/howdybot_bringup/package.sh'
+[2.772s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/howdybot/ws/install/howdybot_bringup/share/howdybot_bringup/package.bash'
+[2.773s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/howdybot/ws/install/howdybot_bringup/share/howdybot_bringup/package.zsh'
+[2.773s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ros/howdybot/ws/install/howdybot_bringup/share/colcon-core/packages/howdybot_bringup)
+[2.773s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.774s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.774s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[2.774s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.788s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[2.788s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.788s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.788s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.791s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.Spawn.ExecFailed: /usr/bin/dbus-launch terminated abnormally without any error message
+[2.791s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.792s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ros/howdybot/ws/install/local_setup.ps1'
+[2.793s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ros/howdybot/ws/install/_local_setup_util_ps1.py'
+[2.794s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ros/howdybot/ws/install/setup.ps1'
+[2.795s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ros/howdybot/ws/install/local_setup.sh'
+[2.796s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ros/howdybot/ws/install/_local_setup_util_sh.py'
+[2.797s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ros/howdybot/ws/install/setup.sh'
+[2.798s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ros/howdybot/ws/install/local_setup.bash'
+[2.799s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ros/howdybot/ws/install/setup.bash'
+[2.800s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ros/howdybot/ws/install/local_setup.zsh'
+[2.801s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ros/howdybot/ws/install/setup.zsh'

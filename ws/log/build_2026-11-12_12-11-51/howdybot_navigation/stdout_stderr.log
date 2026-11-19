@@ -1,0 +1,30 @@
+running egg_info
+creating ../../build/howdybot_navigation/howdybot_navigation.egg-info
+writing ../../build/howdybot_navigation/howdybot_navigation.egg-info/PKG-INFO
+writing dependency_links to ../../build/howdybot_navigation/howdybot_navigation.egg-info/dependency_links.txt
+writing requirements to ../../build/howdybot_navigation/howdybot_navigation.egg-info/requires.txt
+writing top-level names to ../../build/howdybot_navigation/howdybot_navigation.egg-info/top_level.txt
+writing manifest file '../../build/howdybot_navigation/howdybot_navigation.egg-info/SOURCES.txt'
+reading manifest file '../../build/howdybot_navigation/howdybot_navigation.egg-info/SOURCES.txt'
+writing manifest file '../../build/howdybot_navigation/howdybot_navigation.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/ros/howdybot/ws/build/howdybot_navigation/build
+creating /home/ros/howdybot/ws/build/howdybot_navigation/build/lib
+creating /home/ros/howdybot/ws/build/howdybot_navigation/build/lib/howdybot_navigation
+copying howdybot_navigation/__init__.py -> /home/ros/howdybot/ws/build/howdybot_navigation/build/lib/howdybot_navigation
+running install
+running install_lib
+creating /home/ros/howdybot/ws/install/howdybot_navigation/lib/python3.12/site-packages/howdybot_navigation
+copying /home/ros/howdybot/ws/build/howdybot_navigation/build/lib/howdybot_navigation/__init__.py -> /home/ros/howdybot/ws/install/howdybot_navigation/lib/python3.12/site-packages/howdybot_navigation
+byte-compiling /home/ros/howdybot/ws/install/howdybot_navigation/lib/python3.12/site-packages/howdybot_navigation/__init__.py to __init__.cpython-312.pyc
+running install_data
+creating /home/ros/howdybot/ws/install/howdybot_navigation/share/ament_index
+creating /home/ros/howdybot/ws/install/howdybot_navigation/share/ament_index/resource_index
+creating /home/ros/howdybot/ws/install/howdybot_navigation/share/ament_index/resource_index/packages
+copying resource/howdybot_navigation -> /home/ros/howdybot/ws/install/howdybot_navigation/share/ament_index/resource_index/packages
+copying package.xml -> /home/ros/howdybot/ws/install/howdybot_navigation/share/howdybot_navigation
+running install_egg_info
+Copying ../../build/howdybot_navigation/howdybot_navigation.egg-info to /home/ros/howdybot/ws/install/howdybot_navigation/lib/python3.12/site-packages/howdybot_navigation-0.0.0-py3.12.egg-info
+running install_scripts
+writing list of installed files to '/home/ros/howdybot/ws/build/howdybot_navigation/install.log'

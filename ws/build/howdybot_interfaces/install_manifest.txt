@@ -1,0 +1,15 @@
+/home/ros/howdybot/ws/install/howdybot_interfaces/share/ament_index/resource_index/package_run_dependencies/howdybot_interfaces
+/home/ros/howdybot/ws/install/howdybot_interfaces/share/ament_index/resource_index/parent_prefix_path/howdybot_interfaces
+/home/ros/howdybot/ws/install/howdybot_interfaces/share/howdybot_interfaces/environment/ament_prefix_path.sh
+/home/ros/howdybot/ws/install/howdybot_interfaces/share/howdybot_interfaces/environment/ament_prefix_path.dsv
+/home/ros/howdybot/ws/install/howdybot_interfaces/share/howdybot_interfaces/environment/path.sh
+/home/ros/howdybot/ws/install/howdybot_interfaces/share/howdybot_interfaces/environment/path.dsv
+/home/ros/howdybot/ws/install/howdybot_interfaces/share/howdybot_interfaces/local_setup.bash
+/home/ros/howdybot/ws/install/howdybot_interfaces/share/howdybot_interfaces/local_setup.sh
+/home/ros/howdybot/ws/install/howdybot_interfaces/share/howdybot_interfaces/local_setup.zsh
+/home/ros/howdybot/ws/install/howdybot_interfaces/share/howdybot_interfaces/local_setup.dsv
+/home/ros/howdybot/ws/install/howdybot_interfaces/share/howdybot_interfaces/package.dsv
+/home/ros/howdybot/ws/install/howdybot_interfaces/share/ament_index/resource_index/packages/howdybot_interfaces
+/home/ros/howdybot/ws/install/howdybot_interfaces/share/howdybot_interfaces/cmake/howdybot_interfacesConfig.cmake
+/home/ros/howdybot/ws/install/howdybot_interfaces/share/howdybot_interfaces/cmake/howdybot_interfacesConfig-version.cmake
+/home/ros/howdybot/ws/install/howdybot_interfaces/share/howdybot_interfaces/package.xml

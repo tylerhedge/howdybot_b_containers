@@ -1,0 +1,58 @@
+[0.345s] Invoking command in '/home/ros/howdybot/ws/build/howdybot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ros/howdybot/ws/src/howdybot_description -DCMAKE_INSTALL_PREFIX=/home/ros/howdybot/ws/install/howdybot_description
+[0.879s] -- The C compiler identification is GNU 13.3.0
+[0.880s] -- The CXX compiler identification is GNU 13.3.0
+[0.881s] -- Detecting C compiler ABI info
+[0.882s] -- Detecting C compiler ABI info - done
+[0.882s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.882s] -- Detecting C compile features
+[0.883s] -- Detecting C compile features - done
+[0.884s] -- Detecting CXX compiler ABI info
+[0.884s] -- Detecting CXX compiler ABI info - done
+[0.885s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.885s] -- Detecting CXX compile features
+[0.885s] -- Detecting CXX compile features - done
+[0.885s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.951s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.113s] -- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.265s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.265s] -- Configured 'flake8' exclude dirs and/or files: 
+[1.267s] -- Added test 'lint_cmake' to check CMake code style
+[1.269s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.273s] -- Added test 'xmllint' to check XML markup files
+[1.277s] -- Configuring done (0.9s)
+[1.286s] -- Generating done (0.0s)
+[1.289s] -- Build files have been written to: /home/ros/howdybot/ws/build/howdybot_description
+[1.294s] Invoked command in '/home/ros/howdybot/ws/build/howdybot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ros/howdybot/ws/src/howdybot_description -DCMAKE_INSTALL_PREFIX=/home/ros/howdybot/ws/install/howdybot_description
+[1.295s] Invoking command in '/home/ros/howdybot/ws/build/howdybot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ros/howdybot/ws/build/howdybot_description -- -j12 -l12
+[1.361s] Invoked command in '/home/ros/howdybot/ws/build/howdybot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ros/howdybot/ws/build/howdybot_description -- -j12 -l12
+[1.362s] Invoking command in '/home/ros/howdybot/ws/build/howdybot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ros/howdybot/ws/build/howdybot_description
+[1.374s] -- Install configuration: ""
+[1.374s] -- Installing: /home/ros/howdybot/ws/install/howdybot_description/share/howdybot_description/urdf
+[1.376s] -- Installing: /home/ros/howdybot/ws/install/howdybot_description/share/howdybot_description/urdf/howdybot.urdf.xacro
+[1.376s] -- Installing: /home/ros/howdybot/ws/install/howdybot_description/share/howdybot_description/rviz
+[1.377s] -- Installing: /home/ros/howdybot/ws/install/howdybot_description/share/howdybot_description/rviz/howdybot_view.rviz
+[1.377s] -- Installing: /home/ros/howdybot/ws/install/howdybot_description/share/howdybot_description/rviz/howdybot.rviz
+[1.377s] -- Installing: /home/ros/howdybot/ws/install/howdybot_description/share/howdybot_description/launch
+[1.378s] -- Installing: /home/ros/howdybot/ws/install/howdybot_description/share/howdybot_description/launch/view_robot.launch.py
+[1.378s] -- Installing: /home/ros/howdybot/ws/install/howdybot_description/share/howdybot_description/launch/__pycache__
+[1.379s] -- Installing: /home/ros/howdybot/ws/install/howdybot_description/share/howdybot_description/launch/__pycache__/view_robot.launch.cpython-312.pyc
+[1.379s] -- Installing: /home/ros/howdybot/ws/install/howdybot_description/share/howdybot_description/config
+[1.380s] -- Installing: /home/ros/howdybot/ws/install/howdybot_description/share/howdybot_description/config/howdybot_controllers.yaml
+[1.380s] -- Installing: /home/ros/howdybot/ws/install/howdybot_description/share/howdybot_description/ros2_control
+[1.380s] -- Installing: /home/ros/howdybot/ws/install/howdybot_description/share/howdybot_description/ros2_control/howdybot.ros2_control.xacro
+[1.382s] -- Installing: /home/ros/howdybot/ws/install/howdybot_description/share/ament_index/resource_index/package_run_dependencies/howdybot_description
+[1.382s] -- Installing: /home/ros/howdybot/ws/install/howdybot_description/share/ament_index/resource_index/parent_prefix_path/howdybot_description
+[1.383s] -- Installing: /home/ros/howdybot/ws/install/howdybot_description/share/howdybot_description/environment/ament_prefix_path.sh
+[1.389s] -- Installing: /home/ros/howdybot/ws/install/howdybot_description/share/howdybot_description/environment/ament_prefix_path.dsv
+[1.390s] -- Installing: /home/ros/howdybot/ws/install/howdybot_description/share/howdybot_description/environment/path.sh
+[1.390s] -- Installing: /home/ros/howdybot/ws/install/howdybot_description/share/howdybot_description/environment/path.dsv
+[1.390s] -- Installing: /home/ros/howdybot/ws/install/howdybot_description/share/howdybot_description/local_setup.bash
+[1.391s] -- Installing: /home/ros/howdybot/ws/install/howdybot_description/share/howdybot_description/local_setup.sh
+[1.391s] -- Installing: /home/ros/howdybot/ws/install/howdybot_description/share/howdybot_description/local_setup.zsh
+[1.391s] -- Installing: /home/ros/howdybot/ws/install/howdybot_description/share/howdybot_description/local_setup.dsv
+[1.391s] -- Installing: /home/ros/howdybot/ws/install/howdybot_description/share/howdybot_description/package.dsv
+[1.391s] -- Installing: /home/ros/howdybot/ws/install/howdybot_description/share/ament_index/resource_index/packages/howdybot_description
+[1.391s] -- Installing: /home/ros/howdybot/ws/install/howdybot_description/share/howdybot_description/cmake/howdybot_descriptionConfig.cmake
+[1.392s] -- Installing: /home/ros/howdybot/ws/install/howdybot_description/share/howdybot_description/cmake/howdybot_descriptionConfig-version.cmake
+[1.393s] -- Installing: /home/ros/howdybot/ws/install/howdybot_description/share/howdybot_description/package.xml
+[1.408s] Invoked command in '/home/ros/howdybot/ws/build/howdybot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ros/howdybot/ws/build/howdybot_description

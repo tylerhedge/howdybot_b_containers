@@ -1,0 +1,39 @@
+[1.601s] Invoking command in '/home/ros/howdybot/ws/src/howdybot_bringup': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ros/howdybot/ws/build/howdybot_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros/howdybot/ws/install/howdybot_bringup/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/howdybot_bringup build --build-base /home/ros/howdybot/ws/build/howdybot_bringup/build install --record /home/ros/howdybot/ws/build/howdybot_bringup/install.log --install-scripts $base/lib/howdybot_bringup --single-version-externally-managed install_data
+[1.841s] running egg_info
+[1.841s] creating ../../build/howdybot_bringup/howdybot_bringup.egg-info
+[1.858s] writing ../../build/howdybot_bringup/howdybot_bringup.egg-info/PKG-INFO
+[1.858s] writing dependency_links to ../../build/howdybot_bringup/howdybot_bringup.egg-info/dependency_links.txt
+[1.858s] writing entry points to ../../build/howdybot_bringup/howdybot_bringup.egg-info/entry_points.txt
+[1.858s] writing requirements to ../../build/howdybot_bringup/howdybot_bringup.egg-info/requires.txt
+[1.859s] writing top-level names to ../../build/howdybot_bringup/howdybot_bringup.egg-info/top_level.txt
+[1.859s] writing manifest file '../../build/howdybot_bringup/howdybot_bringup.egg-info/SOURCES.txt'
+[1.891s] reading manifest file '../../build/howdybot_bringup/howdybot_bringup.egg-info/SOURCES.txt'
+[1.891s] writing manifest file '../../build/howdybot_bringup/howdybot_bringup.egg-info/SOURCES.txt'
+[1.892s] running build
+[1.892s] running build_py
+[1.892s] creating /home/ros/howdybot/ws/build/howdybot_bringup/build
+[1.892s] creating /home/ros/howdybot/ws/build/howdybot_bringup/build/lib
+[1.893s] creating /home/ros/howdybot/ws/build/howdybot_bringup/build/lib/howdybot_bringup
+[1.893s] copying howdybot_bringup/howdy_heartbeat.py -> /home/ros/howdybot/ws/build/howdybot_bringup/build/lib/howdybot_bringup
+[1.894s] copying howdybot_bringup/__init__.py -> /home/ros/howdybot/ws/build/howdybot_bringup/build/lib/howdybot_bringup
+[1.894s] running install
+[1.897s] running install_lib
+[1.915s] creating /home/ros/howdybot/ws/install/howdybot_bringup/lib/python3.12/site-packages/howdybot_bringup
+[1.916s] copying /home/ros/howdybot/ws/build/howdybot_bringup/build/lib/howdybot_bringup/howdy_heartbeat.py -> /home/ros/howdybot/ws/install/howdybot_bringup/lib/python3.12/site-packages/howdybot_bringup
+[1.916s] copying /home/ros/howdybot/ws/build/howdybot_bringup/build/lib/howdybot_bringup/__init__.py -> /home/ros/howdybot/ws/install/howdybot_bringup/lib/python3.12/site-packages/howdybot_bringup
+[1.917s] byte-compiling /home/ros/howdybot/ws/install/howdybot_bringup/lib/python3.12/site-packages/howdybot_bringup/howdy_heartbeat.py to howdy_heartbeat.cpython-312.pyc
+[1.918s] byte-compiling /home/ros/howdybot/ws/install/howdybot_bringup/lib/python3.12/site-packages/howdybot_bringup/__init__.py to __init__.cpython-312.pyc
+[1.918s] running install_data
+[1.918s] creating /home/ros/howdybot/ws/install/howdybot_bringup/share/ament_index
+[1.919s] creating /home/ros/howdybot/ws/install/howdybot_bringup/share/ament_index/resource_index
+[1.919s] creating /home/ros/howdybot/ws/install/howdybot_bringup/share/ament_index/resource_index/packages
+[1.920s] copying resource/howdybot_bringup -> /home/ros/howdybot/ws/install/howdybot_bringup/share/ament_index/resource_index/packages
+[1.920s] copying package.xml -> /home/ros/howdybot/ws/install/howdybot_bringup/share/howdybot_bringup
+[1.921s] creating /home/ros/howdybot/ws/install/howdybot_bringup/share/howdybot_bringup/launch
+[1.921s] copying launch/robot.launch.py -> /home/ros/howdybot/ws/install/howdybot_bringup/share/howdybot_bringup/launch
+[1.921s] running install_egg_info
+[1.937s] Copying ../../build/howdybot_bringup/howdybot_bringup.egg-info to /home/ros/howdybot/ws/install/howdybot_bringup/lib/python3.12/site-packages/howdybot_bringup-0.1.0-py3.12.egg-info
+[1.939s] running install_scripts
+[2.062s] Installing howdy_heartbeat script to /home/ros/howdybot/ws/install/howdybot_bringup/lib/howdybot_bringup
+[2.063s] writing list of installed files to '/home/ros/howdybot/ws/build/howdybot_bringup/install.log'
+[2.085s] Invoked command in '/home/ros/howdybot/ws/src/howdybot_bringup' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ros/howdybot/ws/build/howdybot_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros/howdybot/ws/install/howdybot_bringup/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/howdybot_bringup build --build-base /home/ros/howdybot/ws/build/howdybot_bringup/build install --record /home/ros/howdybot/ws/build/howdybot_bringup/install.log --install-scripts $base/lib/howdybot_bringup --single-version-externally-managed install_data

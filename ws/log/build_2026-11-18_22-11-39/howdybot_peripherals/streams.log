@@ -1,0 +1,19 @@
+[1.477s] Invoking command in '/home/ros/howdybot/ws/src/howdybot_peripherals': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ros/howdybot/ws/build/howdybot_peripherals/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros/howdybot/ws/install/howdybot_peripherals/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/howdybot_peripherals build --build-base /home/ros/howdybot/ws/build/howdybot_peripherals/build install --record /home/ros/howdybot/ws/build/howdybot_peripherals/install.log --install-scripts $base/lib/howdybot_peripherals --single-version-externally-managed install_data
+[1.687s] running egg_info
+[1.704s] writing ../../build/howdybot_peripherals/howdybot_peripherals.egg-info/PKG-INFO
+[1.704s] writing dependency_links to ../../build/howdybot_peripherals/howdybot_peripherals.egg-info/dependency_links.txt
+[1.705s] writing requirements to ../../build/howdybot_peripherals/howdybot_peripherals.egg-info/requires.txt
+[1.705s] writing top-level names to ../../build/howdybot_peripherals/howdybot_peripherals.egg-info/top_level.txt
+[1.738s] reading manifest file '../../build/howdybot_peripherals/howdybot_peripherals.egg-info/SOURCES.txt'
+[1.739s] writing manifest file '../../build/howdybot_peripherals/howdybot_peripherals.egg-info/SOURCES.txt'
+[1.740s] running build
+[1.740s] running build_py
+[1.740s] running install
+[1.746s] running install_lib
+[1.764s] running install_data
+[1.764s] running install_egg_info
+[1.782s] removing '/home/ros/howdybot/ws/install/howdybot_peripherals/lib/python3.12/site-packages/howdybot_peripherals-0.0.0-py3.12.egg-info' (and everything under it)
+[1.783s] Copying ../../build/howdybot_peripherals/howdybot_peripherals.egg-info to /home/ros/howdybot/ws/install/howdybot_peripherals/lib/python3.12/site-packages/howdybot_peripherals-0.0.0-py3.12.egg-info
+[1.785s] running install_scripts
+[1.896s] writing list of installed files to '/home/ros/howdybot/ws/build/howdybot_peripherals/install.log'
+[1.922s] Invoked command in '/home/ros/howdybot/ws/src/howdybot_peripherals' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ros/howdybot/ws/build/howdybot_peripherals/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros/howdybot/ws/install/howdybot_peripherals/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/howdybot_peripherals build --build-base /home/ros/howdybot/ws/build/howdybot_peripherals/build install --record /home/ros/howdybot/ws/build/howdybot_peripherals/install.log --install-scripts $base/lib/howdybot_peripherals --single-version-externally-managed install_data

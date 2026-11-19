@@ -1,9 +1,5 @@
 # Mecanum teleop demo: mock hardware + ros2_control + RViz.
 # Adapted from ros2_control_demos example_2 (Apache-2.0, Stogl Robotics Consulting).
-#
-# Drive it with:
-#   ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args \
-#     -p stamped:=true -r cmd_vel:=/mecanum_drive_controller/reference
 
 from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument, RegisterEventHandler
@@ -52,7 +48,9 @@ def generate_launch_description():
         output="both",
         parameters=[controllers_file],
         # The mecanum controller publishes odom->base_link on ~/tf_odometry, not /tf.
-        remappings=[("/mecanum_drive_controller/tf_odometry", "/tf")],
+        remappings=[("/mecanum_drive_controller/tf_odometry", "/tf"),
+                    ("/mecanum_drive_controller/odometry", "/odom"),
+                    ("/mecanum_drive_controller/reference", "/cmd_vel")],
     )
 
     joint_state_broadcaster_spawner = Node(
@@ -87,7 +85,7 @@ def generate_launch_description():
     delay_rviz_after_mecanum = RegisterEventHandler(
         OnProcessExit(target_action=mecanum_controller_spawner, on_exit=[rviz])
     )
-
+    
     return LaunchDescription(
         [
             DeclareLaunchArgument("gui", default_value="true", description="Start RViz."),

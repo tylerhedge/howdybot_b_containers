@@ -1,0 +1,37 @@
+running egg_info
+creating ../../build/howdybot_bringup/howdybot_bringup.egg-info
+writing ../../build/howdybot_bringup/howdybot_bringup.egg-info/PKG-INFO
+writing dependency_links to ../../build/howdybot_bringup/howdybot_bringup.egg-info/dependency_links.txt
+writing entry points to ../../build/howdybot_bringup/howdybot_bringup.egg-info/entry_points.txt
+writing requirements to ../../build/howdybot_bringup/howdybot_bringup.egg-info/requires.txt
+writing top-level names to ../../build/howdybot_bringup/howdybot_bringup.egg-info/top_level.txt
+writing manifest file '../../build/howdybot_bringup/howdybot_bringup.egg-info/SOURCES.txt'
+reading manifest file '../../build/howdybot_bringup/howdybot_bringup.egg-info/SOURCES.txt'
+writing manifest file '../../build/howdybot_bringup/howdybot_bringup.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/ros/howdybot/ws/build/howdybot_bringup/build
+creating /home/ros/howdybot/ws/build/howdybot_bringup/build/lib
+creating /home/ros/howdybot/ws/build/howdybot_bringup/build/lib/howdybot_bringup
+copying howdybot_bringup/howdy_heartbeat.py -> /home/ros/howdybot/ws/build/howdybot_bringup/build/lib/howdybot_bringup
+copying howdybot_bringup/__init__.py -> /home/ros/howdybot/ws/build/howdybot_bringup/build/lib/howdybot_bringup
+running install
+running install_lib
+creating /home/ros/howdybot/ws/install/howdybot_bringup/lib/python3.12/site-packages/howdybot_bringup
+copying /home/ros/howdybot/ws/build/howdybot_bringup/build/lib/howdybot_bringup/howdy_heartbeat.py -> /home/ros/howdybot/ws/install/howdybot_bringup/lib/python3.12/site-packages/howdybot_bringup
+copying /home/ros/howdybot/ws/build/howdybot_bringup/build/lib/howdybot_bringup/__init__.py -> /home/ros/howdybot/ws/install/howdybot_bringup/lib/python3.12/site-packages/howdybot_bringup
+byte-compiling /home/ros/howdybot/ws/install/howdybot_bringup/lib/python3.12/site-packages/howdybot_bringup/howdy_heartbeat.py to howdy_heartbeat.cpython-312.pyc
+byte-compiling /home/ros/howdybot/ws/install/howdybot_bringup/lib/python3.12/site-packages/howdybot_bringup/__init__.py to __init__.cpython-312.pyc
+running install_data
+creating /home/ros/howdybot/ws/install/howdybot_bringup/share/ament_index
+creating /home/ros/howdybot/ws/install/howdybot_bringup/share/ament_index/resource_index
+creating /home/ros/howdybot/ws/install/howdybot_bringup/share/ament_index/resource_index/packages
+copying resource/howdybot_bringup -> /home/ros/howdybot/ws/install/howdybot_bringup/share/ament_index/resource_index/packages
+copying package.xml -> /home/ros/howdybot/ws/install/howdybot_bringup/share/howdybot_bringup
+creating /home/ros/howdybot/ws/install/howdybot_bringup/share/howdybot_bringup/launch
+copying launch/robot.launch.py -> /home/ros/howdybot/ws/install/howdybot_bringup/share/howdybot_bringup/launch
+running install_egg_info
+Copying ../../build/howdybot_bringup/howdybot_bringup.egg-info to /home/ros/howdybot/ws/install/howdybot_bringup/lib/python3.12/site-packages/howdybot_bringup-0.1.0-py3.12.egg-info
+running install_scripts
+Installing howdy_heartbeat script to /home/ros/howdybot/ws/install/howdybot_bringup/lib/howdybot_bringup
+writing list of installed files to '/home/ros/howdybot/ws/build/howdybot_bringup/install.log'
